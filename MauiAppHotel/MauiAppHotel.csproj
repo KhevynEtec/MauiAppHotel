@@ -57,9 +57,40 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Views\NewPage1.xaml.cs" />
+	  <Compile Remove="Views\NewPage2.xaml.cs" />
+	  <Compile Remove="Views\Sobre.xaml.cs" />
+	  <Compile Remove="Views\SobreAplicativo.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Views\NewPage1.xaml" />
+	  <MauiXaml Remove="Views\NewPage2.xaml" />
+	  <MauiXaml Remove="Views\Sobre.xaml" />
+	  <MauiXaml Remove="Views\SobreAplicativo.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\PlaywriteGBS-Italic-VariableFont_wght.ttf" />
+	  <None Remove="Resources\Fonts\PlaywriteGBS-VariableFont_wght.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ContrataçãodaHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SobreHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

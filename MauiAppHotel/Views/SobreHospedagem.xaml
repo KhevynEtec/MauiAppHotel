@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobreHospedagem"
+             Title="SobreHospedagem"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource MidnightBlue}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+        <Label 
+    Text="Sobre o Aplicativo"
+    FontFamily="PlaywriteVariable"
+    FontSize="40"
+    TextColor="{StaticResource White}"/>
+
+        <Frame Padding="10" Margin="10" BackgroundColor="{StaticResource OffBlack}">
+            <VerticalStackLayout>
+                <Label Text="Desenvolvido por: Khevyn Lopes dos Santos" Margin="5"/>
+
+                <Label Text="Data de lançamento: 01/11/2024" Margin="5"/>
+
+                <Label Text="Versão: 1.0" Margin="5"/>
+
+                <Label Text="Este aplicativo foi desenvolvido para gerenciar as hospedagens" Margin="5"/>
+
+            </VerticalStackLayout>
+        </Frame>
+        
+        <Button Text="Voltar" Clicked="Button_Clicked" Margin="10"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
